@@ -8,6 +8,8 @@
     <link rel="icon" href="img/pkm_icon.png">
     
     <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+                
 
     <!--colocar defer para o js ser  carregado antes-->
     <script defer src="js/script.js"></script>
@@ -16,22 +18,35 @@
 
 </head>
 <body>
+    <div class="cabecalho">
+        <h1>Pokédex</h1>
+    </div>
 
     <main>
-        <img src="img/pk_dex.png" alt="pokédex" class="pokedex">
-        <div class="backgrounds">
+        <div id = "card">
+        
+            <img src="img/pk_card.png" alt="pokédex" class="pokedex">
+        
+            <img src="" alt="pokémon" class = "pokemon_img">
+
+            <div class="type"> 
+                <span id="pkm_type1" class = "pkm_type">tipo</span>
+                <span id="pkm_type2" class = "pkm_type">tipo2</span>
+            </div>
+
+            <h2 class = "pkm_data">
+                <span class = "pkm_number"></span> - <span class="pkm_name"></span>
+            </h2>
+
+            <div class="infos">
+                Weight: <br>
+                <span id="weight">peso</span><br><br>
+                Skills: <br>
+                <span id = "pkmSkl1">habilidade 1</span><br>
+                <span id = "pkmSkl2">habilidade 1</span><br>
+            </div>
 
         </div>
-        <img src="" alt="pokémon" class = "pokemon_img">
-
-        <div class="type">
-            <span class = "pkm_type1">tipo</span>
-            <span class = "pkm_type2">tipo2</span>
-        </div>
-
-        <h2 class = "pkm_data">
-            <span class = "pkm_number"></span> - <span class="pkm_name"></span>
-        </h2>
 
         <form class = "form_shc">
             <input type="search" class = "input_shc" placeholder="Name or Number" required>
