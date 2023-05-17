@@ -9,7 +9,7 @@
     
     <link rel="stylesheet" href="style/style.css">
 
-    <!--colocar defer oara o js ser  carregado antes-->
+    <!--colocar defer para o js ser  carregado antes-->
     <script defer src="js/script.js"></script>
 
     <title>Pokédex</title>
@@ -18,23 +18,29 @@
 <body>
 
     <main>
-        <img src="https://i.gifer.com/4hsh.gif" alt="pokémon" class = "pokemon_img">
+        <img src="img/pk_dex.png" alt="pokédex" class="pokedex">
+        <div class="backgrounds">
 
-        <h1 class = "pkm_data">
-            <span class = "pkm_number">6</span> - <span class="pkm_name">charizard</span>
-        </h1>
+        </div>
+        <img src="" alt="pokémon" class = "pokemon_img">
+
+        <div class="type">
+            <span class = "pkm_type1">tipo</span>
+            <span class = "pkm_type2">tipo2</span>
+        </div>
+
+        <h2 class = "pkm_data">
+            <span class = "pkm_number"></span> - <span class="pkm_name"></span>
+        </h2>
 
         <form class = "form_shc">
             <input type="search" class = "input_shc" placeholder="Name or Number" required>
         </form>
 
         <div class =" buttons">
-            <button class="button btn_prev">Prev &lt;</button>
-            <button class="button btn_next">Next &gt;</button>
+            <button class="button btn_prev">&lt;</button>
+            <button class="button btn_next">&gt;</button>
         </div>
-
-        <img src="img/pk_dex.png" alt="pokédex" class="pokedex">
-
     </main>
         
 </body>
